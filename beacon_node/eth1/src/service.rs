@@ -232,7 +232,7 @@ async fn endpoint_state(
         Err(EndpointError::WrongChainId)
     } else {
         info!(
-            self.log,
+            log,
             "Successfully connected to eth1 node";
             "endpoint" => %endpoint,
         );
